@@ -21,4 +21,21 @@
 前端：will
 后端：thinker
 
+###前端
+前端采用 vue 框架
+使用 vue-router 插件
+加载 bootstrap 样式
 
+需要 npm 及 webpack 支持
+开发时修改package.json 中 IP 为监控的 IP
+运行 npm run dev 指令以实时监控改变
+
+目前前端由 [vue-hackernews](https://github.com/vuejs/vue-hackernews "vue-hackernews") 修改而来，此项目提供了良好的路由控制及数据绑定实例
+
+[vue-router](http://vuejs.github.io/vue-router/zh-cn/index.html "vue-router") 此插件提供路由支持，wiki 中有高级用法
+
+
+####前端构想
+一个公用的 header 和 sidebar(nav)
+view 部分由前端路由控制变化(利用 vue 的模块化开发)
+目录部分目前未细分，拟定以模块为单位进行区分
