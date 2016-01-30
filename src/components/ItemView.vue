@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import store from '../store'
+import store from '../store/index.js'
 import Item from './Item.vue'
 import Comment from './Comment.vue'
 

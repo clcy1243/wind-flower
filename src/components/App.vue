@@ -5,7 +5,7 @@
     </div>
     <div class="row">
       <div class="col-md-2">
-        <ul>
+        <ul class="nav nav-pills nav-stacked">
           <app-nav v-for="nav in navs"
             :nav="nav"
             :page="nav.page"></app-nav>

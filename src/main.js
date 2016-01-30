@@ -5,6 +5,7 @@ import App from './components/App.vue'
 import NewsView from './components/NewsView.vue'
 import ItemView from './components/ItemView.vue'
 import UserView from './components/UserView.vue'
+import LoginView from './components/LoginView.vue'
 
 Vue.config.debug = true
 
@@ -27,10 +28,17 @@ router.map({
   },
   '/item/:id': {
     component: ItemView
+  },
+  '/login': {
+    component: LoginView
   }
 })
 
 router.beforeEach(function () {
+  // 登录控制
+  // if (!isLogin()){
+  //   router.go('/login')
+  // }
   window.scrollTo(0, 0)
 })
 

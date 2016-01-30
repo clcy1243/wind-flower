@@ -60,15 +60,15 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _NewsView = __webpack_require__(19);
+	var _NewsView = __webpack_require__(18);
 	
 	var _NewsView2 = _interopRequireDefault(_NewsView);
 	
-	var _ItemView = __webpack_require__(36);
+	var _ItemView = __webpack_require__(35);
 	
 	var _ItemView2 = _interopRequireDefault(_ItemView);
 	
-	var _UserView = __webpack_require__(46);
+	var _UserView = __webpack_require__(45);
 	
 	var _UserView2 = _interopRequireDefault(_UserView);
 	
@@ -12416,12 +12416,12 @@
 
 	var __vue_script__, __vue_template__
 	__webpack_require__(6)
-	__vue_script__ = __webpack_require__(10)
+	__vue_script__ = __webpack_require__(9)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/App.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(18)
+	__vue_template__ = __webpack_require__(17)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -12431,7 +12431,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/App.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/App.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12446,10 +12446,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(7);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./App.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(9)(content, {});
+	var update = __webpack_require__(8)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -12466,77 +12466,8 @@
 	}
 
 /***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(8)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "html,\nbody {\n  font-family: Verdana;\n  font-size: 13px;\n  height: 100%;\n}\nul {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\na {\n  color: #000;\n  cursor: pointer;\n  text-decoration: none;\n}\n#wrapper {\n  background-color: #f6f6ef;\n  position: relative;\n  width: 85%;\n  min-height: 80px;\n  margin: 0 auto;\n}\n.view {\n  position: absolute;\n  background-color: #f6f6ef;\n  width: 100%;\n  -webkit-transition: opacity 0.2s ease;\n  transition: opacity 0.2s ease;\n  box-sizing: border-box;\n  padding: 8px 20px;\n}\n.view.v-enter,\n.view.v-leave {\n  opacity: 0;\n}\n@media screen and (max-width: 700px) {\n  html,\n  body {\n    margin: 0;\n  }\n  #wrapper {\n    width: 100%;\n  }\n}\n", "", {"version":3,"sources":["/./src/components/src/components/App.vue","/./src/components/App.vue"],"names":[],"mappings":"AAGA;;EACE,qBAAA;EACA,gBAAA;EACA,aAAA;CCDD;ADGD;EACE,sBAAA;EACA,WAAA;EACA,UAAA;CCDD;ADGD;EACE,YAAA;EACA,gBAAA;EACA,sBAAA;CCDD;ADGD;EACE,0BAAA;EACA,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,eAAA;CCDD;ADGD;EACE,mBAAA;EACA,0BAAA;EACA,YAAA;EACA,sCAAA;EAAA,8BAAA;EACA,uBAAA;EACA,kBAAA;CCDD;ADEC;;EACE,WAAA;CCCH;ADCkC;EACjC;;IACE,UAAA;GCED;EDDD;IACE,YAAA;GCGD;CACF","file":"App.vue","sourcesContent":["\n@import \"../variables.styl\"\n\nhtml, body\n  font-family Verdana\n  font-size 13px\n  height 100%\n\nul\n  list-style-type none\n  padding 0\n  margin 0\n\na\n  color #000\n  cursor pointer\n  text-decoration none\n\n#wrapper\n  background-color $bg\n  position relative\n  width 85%\n  min-height 80px\n  margin 0 auto\n\n.view\n  position absolute\n  background-color $bg\n  width 100%\n  transition opacity .2s ease\n  box-sizing border-box\n  padding 8px 20px\n  &.v-enter, &.v-leave\n    opacity 0\n\n@media screen and (max-width: 700px)\n  html, body\n    margin 0\n  #wrapper\n    width 100%\n","html,\nbody {\n  font-family: Verdana;\n  font-size: 13px;\n  height: 100%;\n}\nul {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\na {\n  color: #000;\n  cursor: pointer;\n  text-decoration: none;\n}\n#wrapper {\n  background-color: #f6f6ef;\n  position: relative;\n  width: 85%;\n  min-height: 80px;\n  margin: 0 auto;\n}\n.view {\n  position: absolute;\n  background-color: #f6f6ef;\n  width: 100%;\n  transition: opacity 0.2s ease;\n  box-sizing: border-box;\n  padding: 8px 20px;\n}\n.view.v-enter,\n.view.v-leave {\n  opacity: 0;\n}\n@media screen and (max-width: 700px) {\n  html,\n  body {\n    margin: 0;\n  }\n  #wrapper {\n    width: 100%;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
+/* 7 */,
 /* 8 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-	
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-	
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ },
-/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -12758,7 +12689,7 @@
 
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12767,11 +12698,11 @@
 	  value: true
 	});
 	
-	var _AppHeader = __webpack_require__(11);
+	var _AppHeader = __webpack_require__(10);
 	
 	var _AppHeader2 = _interopRequireDefault(_AppHeader);
 	
-	var _AppNav = __webpack_require__(15);
+	var _AppNav = __webpack_require__(14);
 	
 	var _AppNav2 = _interopRequireDefault(_AppNav);
 	
@@ -12868,12 +12799,12 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 11 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(12)
-	__vue_template__ = __webpack_require__(14)
+	__webpack_require__(11)
+	__vue_template__ = __webpack_require__(13)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -12883,7 +12814,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/AppHeader.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/AppHeader.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12892,16 +12823,16 @@
 	})()}
 
 /***/ },
-/* 12 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(13);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./AppHeader.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(9)(content, {});
+	var update = __webpack_require__(8)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -12918,36 +12849,23 @@
 	}
 
 /***/ },
+/* 12 */,
 /* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(8)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "#head {\n  background-color: #f60;\n  height: 24px;\n  position: relative;\n}\n#head h1 {\n  font-weight: bold;\n  font-size: 13px;\n  display: inline-block;\n  vertical-align: middle;\n  margin: 0;\n}\n#head .source {\n  color: #fff;\n  font-size: 11px;\n  position: absolute;\n  top: 4px;\n  right: 4px;\n}\n#head .source a {\n  color: #fff;\n}\n#head .source a:hover {\n  text-decoration: underline;\n}\n#yc {\n  border: 1px solid #fff;\n  margin: 2px;\n  display: inline-block;\n  vertical-align: middle;\n}\n#yc img {\n  vertical-align: middle;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/AppHeader.vue","/./src/components/AppHeader.vue"],"names":[],"mappings":"AAIA;EACE,uBAAA;EACA,aAAA;EACA,mBAAA;CCHD;ADIC;EACE,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,uBAAA;EACA,UAAA;CCFH;ADGC;EACE,YAAA;EACA,gBAAA;EACA,mBAAA;EACA,SAAA;EACA,WAAA;CCDH;ADEG;EACE,YAAA;CCAL;ADCK;EACE,2BAAA;CCCP;ADED;EACE,uBAAA;EACA,YAAA;EACA,sBAAA;EACA,uBAAA;CCAD;ADCC;EACE,uBAAA;CCCH","file":"AppHeader.vue","sourcesContent":["\n@import \"../variables.styl\"\n\n\n#head\n  background-color #f60\n  height 24px\n  position relative\n  h1\n    font-weight bold\n    font-size 13px\n    display inline-block\n    vertical-align middle\n    margin 0\n  .source\n    color #fff\n    font-size 11px\n    position absolute\n    top 4px\n    right 4px\n    a\n      color #fff\n      &:hover\n        text-decoration underline\n\n\n#yc\n  border 1px solid #fff\n  margin 2px\n  display inline-block\n  vertical-align middle\n  img\n    vertical-align middle\n\n","#head {\n  background-color: #f60;\n  height: 24px;\n  position: relative;\n}\n#head h1 {\n  font-weight: bold;\n  font-size: 13px;\n  display: inline-block;\n  vertical-align: middle;\n  margin: 0;\n}\n#head .source {\n  color: #fff;\n  font-size: 11px;\n  position: absolute;\n  top: 4px;\n  right: 4px;\n}\n#head .source a {\n  color: #fff;\n}\n#head .source a:hover {\n  text-decoration: underline;\n}\n#yc {\n  border: 1px solid #fff;\n  margin: 2px;\n  display: inline-block;\n  vertical-align: middle;\n}\n#yc img {\n  vertical-align: middle;\n}\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<!-- header -->\n<div id=\"head\">\n  <a id=\"yc\" href=\"http://www.ycombinator.com\">\n    <img src=\"https://news.ycombinator.com/y18.gif\">\n  </a>\n  <h1><a href=\"#/\">蒲公英</a></h1>\n  <span class=\"source\">\n    Built with <a href=\"http://vuejs.org\" target=\"_blank\">Vue.js</a> |\n    <a href=\"https://github.com/yyx990803/vue-hackernews\" target=\"_blank\">Source</a>\n  </span>\n</div>\n";
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(16)
+	__vue_script__ = __webpack_require__(15)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/AppNav.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(17)
+	__vue_template__ = __webpack_require__(16)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -12957,7 +12875,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/AppNav.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/AppNav.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12966,7 +12884,7 @@
 	})()}
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -12999,29 +12917,29 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<li><a :href=\"href\">{{page}}</a></li>\n";
 
 /***/ },
-/* 18 */
+/* 17 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div id=\"wrapper\" class=\"container-fluid\">\n  <div class=\"row\">\n    <app-header></app-header>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-2\">\n      <ul>\n        <app-nav v-for=\"nav in navs\"\n          :nav=\"nav\"\n          :page=\"nav.page\"></app-nav>\n      </ul>\n    </div>\n    <div class=\"col-md-10\">\n  <!-- main view -->\n      <router-view\n        class=\"view\"\n        keep-alive\n        transition\n        transition-mode=\"out-in\">\n      </router-view>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 19 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(20)
-	__vue_script__ = __webpack_require__(22)
+	__webpack_require__(19)
+	__vue_script__ = __webpack_require__(21)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/NewsView.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(35)
+	__vue_template__ = __webpack_require__(34)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -13031,7 +12949,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/NewsView.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/NewsView.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -13040,16 +12958,16 @@
 	})()}
 
 /***/ },
-/* 20 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(21);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./NewsView.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(9)(content, {});
+	var update = __webpack_require__(8)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -13066,21 +12984,8 @@
 	}
 
 /***/ },
+/* 20 */,
 /* 21 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(8)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".news-view {\n  padding-left: 5px;\n  padding-right: 15px;\n}\n.news-view.loading:before {\n  content: \"Loading...\";\n  position: absolute;\n  top: 16px;\n  left: 20px;\n}\n.news-view .nav {\n  padding: 10px 10px 10px 40px;\n  margin-top: 10px;\n  border-top: 2px solid #f60;\n}\n.news-view .nav a {\n  margin-right: 10px;\n}\n.news-view .nav a:hover {\n  text-decoration: underline;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/NewsView.vue","/./src/components/NewsView.vue"],"names":[],"mappings":"AACA;EACE,kBAAA;EACA,oBAAA;CCAD;ADCC;EACE,sBAAA;EACA,mBAAA;EACA,UAAA;EACA,WAAA;CCCH;ADAC;EACE,6BAAA;EACA,iBAAA;EACA,2BAAA;CCEH;ADDG;EACE,mBAAA;CCGL;ADFK;EACE,2BAAA;CCIP","file":"NewsView.vue","sourcesContent":["\n.news-view\n  padding-left 5px\n  padding-right 15px\n  &.loading:before\n    content \"Loading...\"\n    position absolute\n    top 16px\n    left 20px\n  .nav\n    padding 10px 10px 10px 40px\n    margin-top 10px\n    border-top 2px solid #f60\n    a\n      margin-right 10px\n      &:hover\n        text-decoration underline\n",".news-view {\n  padding-left: 5px;\n  padding-right: 15px;\n}\n.news-view.loading:before {\n  content: \"Loading...\";\n  position: absolute;\n  top: 16px;\n  left: 20px;\n}\n.news-view .nav {\n  padding: 10px 10px 10px 40px;\n  margin-top: 10px;\n  border-top: 2px solid #f60;\n}\n.news-view .nav a {\n  margin-right: 10px;\n}\n.news-view .nav a:hover {\n  text-decoration: underline;\n}\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13089,11 +12994,11 @@
 	  value: true
 	});
 	
-	var _store = __webpack_require__(23);
+	var _store = __webpack_require__(22);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
-	var _Item = __webpack_require__(30);
+	var _Item = __webpack_require__(29);
 	
 	var _Item2 = _interopRequireDefault(_Item);
 	
@@ -13207,12 +13112,12 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 23 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _create = __webpack_require__(24);
+	var _create = __webpack_require__(23);
 	
 	var _create2 = _interopRequireDefault(_create);
 	
@@ -13220,13 +13125,13 @@
 	  value: true
 	});
 	
-	var _firebase = __webpack_require__(27);
+	var _firebase = __webpack_require__(26);
 	
 	var _firebase2 = _interopRequireDefault(_firebase);
 	
-	var _events = __webpack_require__(28);
+	var _events = __webpack_require__(27);
 	
-	var _es6Promise = __webpack_require__(29);
+	var _es6Promise = __webpack_require__(28);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -13316,22 +13221,22 @@
 	};
 
 /***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(24), __esModule: true };
+
+/***/ },
 /* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(25), __esModule: true };
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(26);
+	var $ = __webpack_require__(25);
 	module.exports = function create(P, D){
 	  return $.create(P, D);
 	};
 
 /***/ },
-/* 26 */
+/* 25 */
 /***/ function(module, exports) {
 
 	var $Object = Object;
@@ -13349,7 +13254,7 @@
 	};
 
 /***/ },
-/* 27 */
+/* 26 */
 /***/ function(module, exports) {
 
 	/*! @license Firebase v2.4.0
@@ -13633,7 +13538,7 @@
 
 
 /***/ },
-/* 28 */
+/* 27 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -13937,7 +13842,7 @@
 
 
 /***/ },
-/* 29 */
+/* 28 */
 /***/ function(module, exports) {
 
 	/*!
@@ -14910,17 +14815,17 @@
 
 
 /***/ },
-/* 30 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(31)
-	__vue_script__ = __webpack_require__(33)
+	__webpack_require__(30)
+	__vue_script__ = __webpack_require__(32)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/Item.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(34)
+	__vue_template__ = __webpack_require__(33)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -14930,7 +14835,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/Item.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/Item.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -14939,16 +14844,16 @@
 	})()}
 
 /***/ },
-/* 31 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(32);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Item.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(9)(content, {});
+	var update = __webpack_require__(8)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -14965,21 +14870,8 @@
 	}
 
 /***/ },
+/* 31 */,
 /* 32 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(8)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".item {\n  padding: 2px 0 2px 40px;\n  position: relative;\n  -webkit-transition: background-color 0.2s ease;\n  transition: background-color 0.2s ease;\n}\n.item p {\n  margin: 2px 0;\n}\n.item .title:visited {\n  color: #828282;\n}\n.item .index {\n  color: #828282;\n  position: absolute;\n  width: 30px;\n  text-align: right;\n  left: 0;\n  top: 4px;\n}\n.item .domain,\n.item .subtext {\n  font-size: 11px;\n  color: #828282;\n}\n.item .domain a,\n.item .subtext a {\n  color: #828282;\n}\n.item .subtext a:hover {\n  text-decoration: underline;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Item.vue","/./src/components/Item.vue"],"names":[],"mappings":"AAGA;EACE,wBAAA;EACA,mBAAA;EACA,+CAAA;EAAA,uCAAA;CCFD;ADGC;EACE,cAAA;CCDH;ADEC;EACI,eAAA;CCAL;ADCC;EACE,eAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;EACA,QAAA;EACA,SAAA;CCCH;ADAC;;EACE,gBAAA;EACA,eAAA;CCGH;ADFG;;EACE,eAAA;CCKL;ADJC;EACE,2BAAA;CCMH","file":"Item.vue","sourcesContent":["\n@import \"../variables.styl\"\n\n.item\n  padding 2px 0 2px 40px\n  position relative\n  transition background-color .2s ease\n  p\n    margin 2px 0\n  .title:visited\n      color $gray\n  .index\n    color $gray\n    position absolute\n    width 30px\n    text-align right\n    left 0\n    top 4px\n  .domain, .subtext\n    font-size 11px\n    color $gray\n    a\n      color $gray\n  .subtext a:hover\n    text-decoration underline\n",".item {\n  padding: 2px 0 2px 40px;\n  position: relative;\n  transition: background-color 0.2s ease;\n}\n.item p {\n  margin: 2px 0;\n}\n.item .title:visited {\n  color: #828282;\n}\n.item .index {\n  color: #828282;\n  position: absolute;\n  width: 30px;\n  text-align: right;\n  left: 0;\n  top: 4px;\n}\n.item .domain,\n.item .subtext {\n  font-size: 11px;\n  color: #828282;\n}\n.item .domain a,\n.item .subtext a {\n  color: #828282;\n}\n.item .subtext a:hover {\n  text-decoration: underline;\n}\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 33 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15063,29 +14955,29 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 34 */
+/* 33 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"item\">\n  <span class=\"index\">{{index}}.</span>\n  <p>\n    <a class=\"title\" :href=\"href\" target=\"_blank\">{{{item.title}}}</a>\n    <span class=\"domain\" v-show=\"showDomain\">\n      ({{item.url | domain}})\n    </span>\n  </p>\n  <p class=\"subtext\">\n    <span v-show=\"showInfo\">\n      {{item.score}} points by\n      <a :href=\"'#/user/' + item.by\">{{item.by}}</a>\n    </span>\n    {{item.time | fromNow}} ago\n    <span class=\"comments-link\" v-show=\"showInfo\">\n      | <a :href=\"'#/item/' + item.id\">{{item.descendants}} {{item.descendants | pluralize 'comment'}}</a>\n    </span>\n  </p>\n</div>\n";
 
 /***/ },
-/* 35 */
+/* 34 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"news-view\" :class=\"{ loading: !items.length }\">\n  <!-- item list -->\n  <item\n    v-for=\"item in items\"\n    :item=\"item\"\n    :index=\"$index | formatItemIndex\"\n    track-by=\"id\">\n  </item>\n  <!-- navigation -->\n  <div class=\"nav\" v-show=\"items.length > 0\">\n    <a v-if=\"page > 1\" :href=\"'#/news/' + (page - 1)\">&lt; prev</a>\n    <a v-if=\"page < 4\" :href=\"'#/news/' + (page + 1)\">more...</a>\n  </div>\n</div>\n";
 
 /***/ },
-/* 36 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(37)
-	__vue_script__ = __webpack_require__(39)
+	__webpack_require__(36)
+	__vue_script__ = __webpack_require__(38)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/ItemView.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(45)
+	__vue_template__ = __webpack_require__(44)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15095,7 +14987,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/ItemView.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/ItemView.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15104,16 +14996,16 @@
 	})()}
 
 /***/ },
-/* 37 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(38);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./ItemView.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(9)(content, {});
+	var update = __webpack_require__(8)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -15130,21 +15022,8 @@
 	}
 
 /***/ },
+/* 37 */,
 /* 38 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(8)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".item-view .item {\n  padding-left: 0;\n  margin-bottom: 30px;\n}\n.item-view .item .index {\n  display: none;\n}\n.item-view .poll-options {\n  margin-left: 30px;\n  margin-bottom: 40px;\n}\n.item-view .poll-options li {\n  margin: 12px 0;\n}\n.item-view .poll-options p {\n  margin: 8px 0;\n}\n.item-view .poll-options .subtext {\n  color: #828282;\n  font-size: 11px;\n}\n.item-view .itemtext {\n  color: #828282;\n  margin-top: 0;\n  margin-bottom: 30px;\n}\n.item-view .itemtext p {\n  margin: 10px 0;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/ItemView.vue","/./src/components/ItemView.vue"],"names":[],"mappings":"AAIE;EACE,gBAAA;EACA,oBAAA;CCHH;ADIG;EACE,cAAA;CCFL;ADGC;EACE,kBAAA;EACA,oBAAA;CCDH;ADEG;EACE,eAAA;CCAL;ADCG;EACE,cAAA;CCCL;ADAG;EACE,eAAA;EACA,gBAAA;CCEL;ADDC;EACE,eAAA;EACA,cAAA;EACA,oBAAA;CCGH;ADFC;EACE,eAAA;CCIH","file":"ItemView.vue","sourcesContent":["\n@import \"../variables.styl\"\n\n.item-view\n  .item\n    padding-left 0\n    margin-bottom 30px\n    .index\n      display none\n  .poll-options\n    margin-left 30px\n    margin-bottom 40px\n    li\n      margin 12px 0\n    p\n      margin 8px 0\n    .subtext\n      color $gray\n      font-size 11px\n  .itemtext\n    color $gray\n    margin-top 0\n    margin-bottom 30px\n  .itemtext p\n    margin 10px 0\n",".item-view .item {\n  padding-left: 0;\n  margin-bottom: 30px;\n}\n.item-view .item .index {\n  display: none;\n}\n.item-view .poll-options {\n  margin-left: 30px;\n  margin-bottom: 40px;\n}\n.item-view .poll-options li {\n  margin: 12px 0;\n}\n.item-view .poll-options p {\n  margin: 8px 0;\n}\n.item-view .poll-options .subtext {\n  color: #828282;\n  font-size: 11px;\n}\n.item-view .itemtext {\n  color: #828282;\n  margin-top: 0;\n  margin-bottom: 30px;\n}\n.item-view .itemtext p {\n  margin: 10px 0;\n}\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15153,15 +15032,15 @@
 	  value: true
 	});
 	
-	var _store = __webpack_require__(23);
+	var _store = __webpack_require__(22);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
-	var _Item = __webpack_require__(30);
+	var _Item = __webpack_require__(29);
 	
 	var _Item2 = _interopRequireDefault(_Item);
 	
-	var _Comment = __webpack_require__(40);
+	var _Comment = __webpack_require__(39);
 	
 	var _Comment2 = _interopRequireDefault(_Comment);
 	
@@ -15262,17 +15141,17 @@
 	// <script>
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(41)
-	__vue_script__ = __webpack_require__(43)
+	__webpack_require__(40)
+	__vue_script__ = __webpack_require__(42)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/Comment.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(44)
+	__vue_template__ = __webpack_require__(43)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15282,7 +15161,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/Comment.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/Comment.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15291,16 +15170,16 @@
 	})()}
 
 /***/ },
-/* 41 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(42);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Comment.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(9)(content, {});
+	var update = __webpack_require__(8)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -15317,21 +15196,8 @@
 	}
 
 /***/ },
+/* 41 */,
 /* 42 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(8)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".comhead {\n  color: #828282;\n  font-size: 11px;\n  margin-bottom: 8px;\n}\n.comhead a {\n  color: #828282;\n}\n.comhead a:hover {\n  text-decoration: underline;\n}\n.comhead .toggle {\n  margin-right: 4px;\n}\n.comment-content {\n  margin: 0 0 16px 24px;\n  word-wrap: break-word;\n}\n.comment-content code {\n  white-space: pre-wrap;\n}\n.child-comments {\n  margin: 8px 0 8px 22px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Comment.vue","/./src/components/Comment.vue"],"names":[],"mappings":"AAGA;EACE,eAAA;EACA,gBAAA;EACA,mBAAA;CCFD;ADGC;EACE,eAAA;CCDH;ADEG;EACE,2BAAA;CCAL;ADCC;EACE,kBAAA;CCCH;ADCD;EACE,sBAAA;EACA,sBAAA;CCCD;ADAC;EACE,sBAAA;CCEH;ADAD;EACE,uBAAA;CCED","file":"Comment.vue","sourcesContent":["\n@import \"../variables.styl\"\n\n.comhead\n  color $gray\n  font-size 11px\n  margin-bottom 8px\n  a\n    color $gray\n    &:hover\n      text-decoration underline\n  .toggle\n    margin-right 4px\n\n.comment-content\n  margin 0 0 16px 24px\n  word-wrap break-word\n  code\n    white-space pre-wrap\n\n.child-comments\n  margin 8px 0 8px 22px\n",".comhead {\n  color: #828282;\n  font-size: 11px;\n  margin-bottom: 8px;\n}\n.comhead a {\n  color: #828282;\n}\n.comhead a:hover {\n  text-decoration: underline;\n}\n.comhead .toggle {\n  margin-right: 4px;\n}\n.comment-content {\n  margin: 0 0 16px 24px;\n  word-wrap: break-word;\n}\n.comment-content code {\n  white-space: pre-wrap;\n}\n.child-comments {\n  margin: 8px 0 8px 22px;\n}\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15340,7 +15206,7 @@
 	  value: true
 	});
 	
-	var _store = __webpack_require__(23);
+	var _store = __webpack_require__(22);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -15416,29 +15282,29 @@
 	// <script>
 
 /***/ },
-/* 44 */
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<li v-show=\"comment.text\">\n  <div class=\"comhead\">\n    <a class=\"toggle\" @click=\"open = !open\">{{open ? '[-]' : '[+]'}}</a>\n    <a :href=\"'#/user/' + comment.by\">{{comment.by}}</a>\n    {{comment.time | fromNow}} ago\n  </div>\n  <p class=\"comment-content\" v-show=\"open\">\n    {{{comment.text}}}\n  </p>\n  <ul class=\"child-comments\" v-if=\"comment.kids\" v-show=\"open\">\n    <comment v-for=\"comment in childComments\" :comment=\"comment\"></comment>\n  </ul>\n</li>\n";
 
 /***/ },
-/* 45 */
+/* 44 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"item-view\" v-show=\"item\">\n  <item :item=\"item\"></item>\n  <p class=\"itemtext\" v-if=\"hasText\" v-html=\"item.text\"></p>\n  <ul class=\"poll-options\" v-if=\"pollOptions\">\n    <li v-for=\"option in pollOptions\">\n      <p>{{option.text}}</p>\n      <p class=\"subtext\">{{option.score}} points</p>\n    </li>\n  </ul>\n  <ul class=\"comments\" v-if=\"comments\">\n    <comment\n      v-for=\"comment in comments\"\n      :comment=\"comment\">\n    </comment>\n  </ul>\n  <p v-show=\"!comments.length && !isJob\">No comments yet.</p>\n</div>\n";
 
 /***/ },
-/* 46 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(47)
-	__vue_script__ = __webpack_require__(49)
+	__webpack_require__(46)
+	__vue_script__ = __webpack_require__(48)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/UserView.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(50)
+	__vue_template__ = __webpack_require__(49)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15448,7 +15314,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/web/hackernews/src/components/UserView.vue"
+	  var id = "/Users/Will/Documents/project/wind-flower/src/components/UserView.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15457,16 +15323,16 @@
 	})()}
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(48);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./UserView.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(9)(content, {});
+	var update = __webpack_require__(8)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -15483,21 +15349,8 @@
 	}
 
 /***/ },
+/* 47 */,
 /* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(8)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".user-view {\n  color: #828282;\n}\n.user-view li {\n  margin: 5px 0;\n}\n.user-view .label {\n  display: inline-block;\n  min-width: 60px;\n}\n.user-view .about {\n  margin-top: 1em;\n}\n.user-view .links a {\n  text-decoration: underline;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/UserView.vue","/./src/components/UserView.vue"],"names":[],"mappings":"AAGA;EACE,eAAA;CCFD;ADGC;EACE,cAAA;CCDH;ADEC;EACE,sBAAA;EACA,gBAAA;CCAH;ADCC;EACE,gBAAA;CCCH;ADAC;EACE,2BAAA;CCEH","file":"UserView.vue","sourcesContent":["\n@import \"../variables.styl\"\n\n.user-view\n  color $gray\n  li\n    margin 5px 0\n  .label\n    display inline-block\n    min-width 60px\n  .about\n    margin-top 1em\n  .links a\n    text-decoration underline\n",".user-view {\n  color: #828282;\n}\n.user-view li {\n  margin: 5px 0;\n}\n.user-view .label {\n  display: inline-block;\n  min-width: 60px;\n}\n.user-view .about {\n  margin-top: 1em;\n}\n.user-view .links a {\n  text-decoration: underline;\n}\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15506,7 +15359,7 @@
 	  value: true
 	});
 	
-	var _store = __webpack_require__(23);
+	var _store = __webpack_require__(22);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -15577,7 +15430,7 @@
 	// <script>
 
 /***/ },
-/* 50 */
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"user-view\" v-show=\"user\">\n  <ul>\n    <li><span class=\"label\">user:</span> {{user.id}}</li>\n    <li><span class=\"label\">created:</span> {{user.created | fromNow}} ago</li>\n    <li><span class=\"label\">karma:</span> {{user.karma}}</li>\n    <li>\n      <span class=\"label\">about:</span>\n      <div class=\"about\">\n        {{{user.about}}}\n      </div>\n    </li>\n  </ul>\n  <p class=\"links\">\n    <a :href=\"'https://news.ycombinator.com/submitted?id=' + user.id\">submissions</a><br>\n    <a :href=\"'https://news.ycombinator.com/threads?id=' + user.id\">comments</a>\n  </p>\n</div>\n";
