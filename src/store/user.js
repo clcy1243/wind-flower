@@ -17,3 +17,12 @@ user.login = user => {
         return false
     }
 }
+
+/**
+ * [description]
+ * @param  {[type]} asd [description]
+ * @return {[type]}     [description]
+ */
+user.isLogin = asd => {
+    return true
+}

@@ -2,7 +2,7 @@
   <li v-show="comment.text">
     <div class="comhead">
       <a class="toggle" @click="open = !open">{{open ? '[-]' : '[+]'}}</a>
-      <a :href="'#/user/' + comment.by">{{comment.by}}</a>
+      <a v-link="'/admin/user/' + comment.by">{{comment.by}}</a>
       {{comment.time | fromNow}} ago
     </div>
     <p class="comment-content" v-show="open">
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import store from '../store/index.js'
+import store from '../../store/index.js'
 
 export default {
 
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import "../variables.styl"
+@import "../../variables.styl"
 
 .comhead
   color $gray

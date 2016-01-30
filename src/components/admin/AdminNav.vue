@@ -16,7 +16,7 @@ export default {
 
   computed: {
     href () {
-      return '/news/' + this.nav.page
+      return '/admin/news/' + this.nav.page
     }
   }
 }

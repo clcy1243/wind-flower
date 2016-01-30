@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import user from '../store/user.js'
+import user from '../../store/user.js'
 
 export default {
 

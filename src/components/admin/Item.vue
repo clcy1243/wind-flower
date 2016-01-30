@@ -2,7 +2,7 @@
   <div class="item">
     <span class="index">{{index}}.</span>
     <p>
-      <a class="title" :href="href" target="_blank">{{{item.title}}}</a>
+      <a class="title" v-link="href" target="_blank">{{{item.title}}}</a>
       <span class="domain" v-show="showDomain">
         ({{item.url | domain}})
       </span>
@@ -10,11 +10,11 @@
     <p class="subtext">
       <span v-show="showInfo">
         {{item.score}} points by
-        <a :href="'#/user/' + item.by">{{item.by}}</a>
+        <a v-link="'/admin/user/' + item.by">{{item.by}}</a>
       </span>
       {{item.time | fromNow}} ago
       <span class="comments-link" v-show="showInfo">
-        | <a :href="'#/item/' + item.id">{{item.descendants}} {{item.descendants | pluralize 'comment'}}</a>
+        | <a v-link="'/admin/item/' + item.id">{{item.descendants}} {{item.descendants | pluralize 'comment'}}</a>
       </span>
     </p>
   </div>
@@ -32,7 +32,7 @@ export default {
 
   computed: {
     href () {
-      return this.item.url || ('#/item/' + this.item.id)
+      return this.item.url || ('/admin/item/' + this.item.id)
     },
     showInfo () {
       return this.item.type === 'story' || this.item.type === 'poll'
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import "../variables.styl"
+@import "../../variables.styl"
 
 .item
   padding 2px 0 2px 40px

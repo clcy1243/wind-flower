@@ -1,11 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import { domain, fromNow } from './filters'
-import App from './components/App.vue'
-import NewsView from './components/NewsView.vue'
-import ItemView from './components/ItemView.vue'
-import UserView from './components/UserView.vue'
-import LoginView from './components/LoginView.vue'
+import App   from './components/App.vue'
+import Index from './components/Index.vue'
+
+
+import Admin     from './components/admin/Admin.vue'
+import NewsView  from './components/admin/NewsView.vue'
+import ItemView  from './components/admin/ItemView.vue'
+import UserView  from './components/admin/UserView.vue'
+import LoginView from './components/admin/LoginView.vue'
+import user from './store/user.js'
 
 Vue.config.debug = true
 
@@ -20,30 +25,46 @@ Vue.filter('domain', domain)
 var router = new Router()
 
 router.map({
-  '/news/:page': {
-    component: NewsView
+  '/admin': {
+    component:Admin,
+    subRoutes: {
+      '/login': {
+        component: LoginView
+      },
+      '/': {
+        component: LoginView
+      },
+      '/news/:page': {
+        component: NewsView
+      },
+      '/news/:page': {
+        component: NewsView
+      },
+      '/user/:id': {
+        component: UserView
+      },
+      '/item/:id': {
+        component: ItemView
+      }
+    }
   },
-  '/user/:id': {
-    component: UserView
-  },
-  '/item/:id': {
-    component: ItemView
-  },
-  '/login': {
-    component: LoginView
+  '/' : {
+    component:Index,
+      subRoutes: {
+    }
   }
 })
 
 router.beforeEach(function () {
   // 登录控制
-  // if (!isLogin()){
-  //   router.go('/login')
-  // }
+  if (!user.isLogin()){
+    router.go('/admin/login')
+  }
   window.scrollTo(0, 0)
 })
 
 router.redirect({
-  '*': '/news/1'
+  '*': '/'
 })
 // 为 组件 APP 绑定路由
 router.start(App, '#app')

@@ -36,7 +36,7 @@
 </template>
 
 <style lang="stylus">
-@import "../variables.styl"
+@import "../../variables.styl"
 
 
 .header

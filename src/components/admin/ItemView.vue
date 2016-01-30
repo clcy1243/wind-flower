@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import store from '../store/index.js'
+import store from '../../store/index.js'
 import Item from './Item.vue'
 import Comment from './Comment.vue'
 
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import "../variables.styl"
+@import "../../variables.styl"
 
 .item-view
   .item

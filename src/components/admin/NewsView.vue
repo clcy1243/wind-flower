@@ -9,14 +9,14 @@
     </item>
     <!-- navigation -->
     <div class="nav" v-show="items.length > 0">
-      <a v-if="page > 1" :href="'#/news/' + (page - 1)">&lt; prev</a>
-      <a v-if="page < 4" :href="'#/news/' + (page + 1)">more...</a>
+      <a v-if="page > 1" v-link="'/admin/news/' + (page - 1)">&lt; prev</a>
+      <a v-if="page < 4" v-link="'/admin/news/' + (page + 1)">more...</a>
     </div>
   </div>
 </template>
 
 <script>
-import store from '../store/index.js'
+import store from '../../store/index.js'
 import Item from './Item.vue'
 
 export default {

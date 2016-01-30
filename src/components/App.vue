@@ -1,59 +1,6 @@
-<template>
-  <div id="wrapper" class="container-fluid">
-    <div class="row">
-      <app-header></app-header>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <ul class="nav nav-pills nav-stacked">
-          <app-nav v-for="nav in navs"
-            :nav="nav"
-            :page="nav.page"></app-nav>
-        </ul>
-      </div>
-      <div class="col-md-10">
-    <!-- main view -->
-        <router-view
-          class="view"
-          keep-alive
-          transition
-          transition-mode="out-in">
-        </router-view>
-      </div>
-    </div>
-  </div>
-</template>
+<template><router-view></router-view></template>
 
-<script>
-import AppHeader from './AppHeader.vue'
-import AppNav from './AppNav.vue'
-
-export default {
-
-  name: 'App',
-
-  components: {
-    AppHeader,
-    AppNav
-  },
-
-
-  data () {
-    var nav = AppNav
-    nav.page = 1
-    return {
-      navs: [
-      {page:1},
-      {page:2},
-      {page:3},
-      {page:4}
-      ]
-    }
-  }
-}
-</script>
-
-<style lang="stylus">
+<!-- style lang="stylus">
 @import "../variables.styl"
 
 html, body
@@ -93,4 +40,4 @@ a
     margin 0
   #wrapper
     width 100%
-</style>
+</style -->
